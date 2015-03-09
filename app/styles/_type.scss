@@ -1,0 +1,92 @@
+@import "colors";
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, form, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+//BASELINE 
+*{
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $text-color;
+    font-family: "proxima-nova",sans-serif;
+}
+
+//HEADINGS
+h1, h2, h3, h4, h5, h6 {
+    
+}
+
+h1 {
+    font-size:2.2em;
+    line-height: 2.4em;
+}
+
+h2 {
+    font-size: 2.0em;
+    line-height: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+    line-height: 2.0;
+}
+
+h4 {
+    font-size: 1.6em;
+    line-height: 1.8em;
+}
+
+h5 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+
+h6 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+//PARAGRAPHS
+p {
+    margin-bottom: 20px;
+}
+
+//LIST
+.no-list-style {
+    list-style: none;
+}
+    
+
+//LINKS
+a {
+    color: $primary-color;
+    text-decoration: none;
+    &.no-color {
+        color: $text-color;
+        background-color: none;
+    }
+    
+    &:hover {
+        color: #fff;
+        background: $primary-color;
+        &.no-hover {
+            color: $primary-color;
+            background-color: none !important;
+            &.no-color {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+//HELPER CLASSES
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+

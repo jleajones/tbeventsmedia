@@ -1,0 +1,65 @@
+@import "colors";
+
+header {
+    margin-bottom: 20px;
+    
+    //MAIN NAVIGATION
+    > nav {
+        font-weight: 100;
+        > ul {
+            margin-top: 90px;
+            > li {
+                position: relative;
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding: 4px 0;
+                    font-size: 1.1em;
+                }
+                > ul {
+                    visibility: hidden;
+                    position: absolute;
+                    top: 100%;
+                    width: 200px;
+                    background: #fff;
+                    border: solid 1px $primary-color;
+                    overflow: hidden;
+                    
+                    > li {
+                        a {
+                            text-align: left;
+                            padding: 3px 8px;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    > ul {
+                        visibility: visible;
+                    }
+                    > a {
+                        color: #fff;
+                        background: $primary-color;
+                        
+                        &.no-hover {
+                            color: initial;
+                            background-color: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //MAST LOGO
+    #logo {
+        text-indent: -9999px;
+        height:134px;
+        width: 126px;
+        margin: 0 auto;
+        background: url('../images/mast_logo.png') center no-repeat;
+        margin-top: -70px;
+    }
+}
