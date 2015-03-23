@@ -63,6 +63,7 @@ p {
 a {
     color: $primary-color;
     text-decoration: none;
+    
     &.no-color {
         color: $text-color;
         background-color: none;
@@ -81,6 +82,11 @@ a {
     }
 }
 
+p > a {    
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
 //HELPER CLASSES
 .capitalize {
     text-transform: capitalize;
@@ -88,5 +94,27 @@ a {
 
 .uppercase {
     text-transform: uppercase
+}
+
+.primary-txt {
+    color: $primary-color;   
+}
+
+.primary-bg {
+    background-color: $primary-color;
+}
+
+.primary-bg-hover:hover {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: darken($primary-color, 10%)   
+}
+
+.secondary-txt {
+    color: $secondary-color;   
+}
+
+.secondary-bg {
+    background-color: $secondary-color;
 }
 

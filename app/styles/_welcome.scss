@@ -1,0 +1,15 @@
+.welcome {
+    text-align: center;
+    border-bottom: solid 1px $border-color;
+    margin-bottom: 20px;
+    
+    p {
+        padding: 0 40px;
+        font-size: 1.12em;
+        line-height: 1.6em;
+        
+        a {
+            padding: 0 4px;
+        }
+    }
+}

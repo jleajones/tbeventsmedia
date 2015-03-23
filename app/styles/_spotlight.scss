@@ -1,0 +1,39 @@
+.spotlight {
+    height: 390px;
+    overflow: hidden;
+    margin-bottom: 20px;
+        
+    > .spot {
+        display: block;
+        float: left;
+        height: 390px;
+        width: 100%;
+        background: url('../images/spot_1.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom center;
+
+        .text-box {
+            background: rgba(0, 0, 0, 0.60);
+            padding: 25px 50px;
+            text-align: center;
+            margin-top: 50px;
+            
+            > h1 {
+                color: #fff;   
+                line-height: 20px;
+            }
+            
+            > .btn {
+                font-weight: 100;
+                margin-top: 25px;
+                display: block;
+                padding: 12px 24px;
+                height: 87px;
+                line-height: 87px;
+                color: #fff;
+                font-size: 72px;
+            }
+        }
+    }
+}
