@@ -1,0 +1,39 @@
+.services {
+    padding: 40px 0 80px;
+    .img-holder {
+        border:solid 1px $border-color;    
+        height:289px;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        
+        &.marketing-promo {
+            background-image: url('../images/marketin-promo.jpg');
+        }
+        
+        &.event-planning {
+            background-image: url('../images/event-planning.jpg');
+        }
+        
+        &.celebrity-booking {
+            background-image: url('../images/celebrity-booking.jpg');
+        }
+    }
+    
+    
+    p {
+        line-height: 1.5em;
+        
+        > a {
+            padding: 0 4px;
+        }
+    }
+}
+
+.well {
+    .services {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+}

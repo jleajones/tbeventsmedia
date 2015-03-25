@@ -1,5 +1,75 @@
 $text-color: #252525;
 $border-color: #b7b7b7;
 
+$med-bg: #d7d7d7;
+
 $primary-color: #0068ff;
 $secondary-color: #d6a918;
+
+//HELPER CLASSES
+.primary-txt {
+    color: $primary-color;   
+}
+
+.dark-bg {
+    background-color: #000;
+}
+
+.primary-bg {
+    background-color: $primary-color;
+}
+
+.primary-bg-hover:hover {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: darken($primary-color, 10%)   
+}
+
+.secondary-txt {
+    color: $secondary-color;   
+}
+
+.secondary-bg {
+    background-color: $secondary-color;
+}
+
+.secondary-bg-2 {
+    background-color: transparentize($secondary-color, 0.2);
+}
+
+.secondary-bg-hover:hover {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background-color: darken($secondary-color, 10%)   
+}
+
+.med-bg {
+    background-color: $med-bg;
+}
+
+.border {
+    border: solid 1px $border-color;
+}
+
+.border-secondary {
+    border: solid 1px $secondary-color;
+}
+
+.border-l {
+    border-left: solid 1px $border-color;
+}
+.border-r {
+    border-right: solid 1px $border-color;
+}
+.border-t {
+    border-top: solid 1px $border-color;
+}
+
+.border-b {
+    border-bottom: solid 1px $border-color;
+}
+
+.border-tb {
+    border-bottom: solid 1px $border-color;
+    border-top: solid 1px $border-color;
+}

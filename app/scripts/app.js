@@ -29,8 +29,8 @@ angular
         controller: 'AboutCtrl'
       })
       .when('/services', {
-        templateUrl: 'views/services.html',
-        controller: 'ServicesCtrl'
+        templateUrl: 'views/overview.html',
+        controller: 'OverviewCtrl'
       })
       .when('/comedy', {
         templateUrl: 'views/comedy.html',
@@ -63,6 +63,14 @@ angular
       .when('/services/booking', {
         templateUrl: 'views/booking.html',
         controller: 'BookingCtrl'
+      })
+      .when('/entertainment', {
+        templateUrl: 'views/entertainment.html',
+        controller: 'EntertainmentCtrl'
+      })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
       })
       .otherwise({
         redirectTo: '/'

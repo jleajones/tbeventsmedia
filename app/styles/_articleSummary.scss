@@ -1,0 +1,26 @@
+.article-summary {
+    
+    ul {
+        > li {
+            display: block;
+            margin-bottom: 35px;
+    
+            .img-holder {
+                width: 100%;
+                height: 390px;
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+    
+    h2 {
+        line-height: 1.0em;
+    }
+
+    p {
+        > a {
+            padding: 0 2px;   
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.top-artist {
+    margin-bottom: 20px;
+    padding: 25px 0;
+        
+    .control {
+
+    }
+
+    .prev {
+        text-align: right;
+    }
+
+    .next {
+
+    }
+    
+    .stage {
+        overflow: hidden;
+        height: 191px;
+            
+        > ul {
+            width: 99999px;
+            height: 191px;
+            
+            list-style: none;
+            > li {
+                display: block;
+                width: 220px;
+                height: 191px;
+                margin-right: 20px;
+                border: solid 1px $secondary-color;
+                position: relative;
+                
+                > .text-box {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    height: 45px;
+                    padding: 0 8px;
+                    
+                    p {
+                        line-height: 45px;
+                        font-weight: bold;
+                        color: #fff;
+                        text-transform: capitalize;
+                        
+                        > a {
+                            color: #fff;
+                            margin-top: 7px;
+                            line-height: 31px;
+                            font-size: 0.8em;
+                            border-radius: 5px;
+                            padding: 0 8px;
+                            
+                            &:hover {
+                                background-color: darken($primary-color, 10%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    p {
+        margin: 0;
+        
+        > a {
+            padding: 0 4px;
+        }
+    }
+}

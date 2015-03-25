@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: ServicesCtrl', function () {
+describe('Controller: EntertainmentCtrl', function () {
 
   // load the controller's module
   beforeEach(module('tbemApp'));
 
-  var ServicesCtrl,
+  var EntertainmentCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ServicesCtrl = $controller('ServicesCtrl', {
+    EntertainmentCtrl = $controller('EntertainmentCtrl', {
       $scope: scope
     });
   }));

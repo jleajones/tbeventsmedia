@@ -1,0 +1,36 @@
+.email-signup {
+    margin-bottom: 40px;
+    
+    div {
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    h4 {
+        color: #fff;
+        padding: 0 8px;
+    }
+    
+    p {
+        margin-top: 10px;
+        margin-bottom: 0; 
+    }
+        
+    a {
+        color: #fff;
+        height: 36px;
+        line-height: 36px;
+        display: block;
+        padding: 0 12px;
+        position: absolute;
+        right: 0;
+    }  
+    
+    input {
+        width: 100%;
+        
+        &:focus {
+            border-right: none;
+        }
+    }
+}

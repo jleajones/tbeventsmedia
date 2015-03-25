@@ -1,0 +1,19 @@
+@import "colors";
+.page-header {
+    margin-bottom: 40px;
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom, darken($primary-color, 20%) 0,lighten($primary-color, 10%) 100%);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.75);
+    
+    h1 {
+        color: #fff;
+        font-size: 4.2em;
+        line-height: 1.5em;
+    }
+    
+    h6 {
+        font-weight: 100;
+        font-size: 1.5em;
+        color: lighten($primary-color, 50%);
+    }
+}

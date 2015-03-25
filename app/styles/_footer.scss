@@ -1,0 +1,87 @@
+footer {
+    padding: 20px 0;
+    .border-l, .border-r {
+        border-color: #fff;
+    }
+    
+    .contact {
+        h3 {
+            color: #fff;
+        }
+        
+        input,
+        textarea {
+            opacity: 0.45;
+            
+            &:focus {
+                opacity: 1.0;
+            }
+        }
+        
+        a {
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            font-size:1.5em;
+            
+            &.border {
+                border-color: #fff;
+            }
+            
+            &:hover {
+                background: darken($primary-color, 10%);
+            }
+        }
+    }
+    
+    .services-list {
+        margin-bottom: 60px;
+        a {
+            color: #fff;
+            font-size: 1.4em;
+            line-height: 1.5em;
+            font-weight: 100;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .social-list {
+        span {
+            margin-top: 10px;
+            display: block;
+            width: 47px;
+            height: 47px;
+            margin-right: 18px;
+            
+            &.twitter {
+                background: url(../images/twitter_footer.jpg) no-repeat;
+            }
+            
+            &.facebook {
+                background: url(../images/facebook_footer.jpg) no-repeat;
+            }
+            
+            &.youtube {
+                background: url(../images/youtube_footer.jpg) no-repeat;
+            }
+            
+            &.instagram {
+                background: url(../images/instagram_footer.jpg) no-repeat;
+            }
+            
+            &.myspace {
+                background: url(../images/myspace_footer.jpg) no-repeat;
+            }
+            
+            &.tumblr {
+                background: url(../images/tumblr_footer.jpg) no-repeat;
+            }
+        }
+    }
+}

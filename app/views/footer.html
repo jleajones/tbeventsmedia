@@ -1,31 +1,43 @@
 <div class="container">
-    <div class="grid-xs-15 grid-sm-3">
-        <ul>
-            <li>services</li>
+    <div class="grid-xs-15 grid-sm-3 border-r">
+        <ul class="no-list-style services-list">
+            <li><a href="#/services" class="capitalize">services</a></li>
+            <li><a href="#/comedy" class="capitalize">comedy</a></li>
+            <li><a href="#/sports" class="capitalize">sports</a></li>
+            <li><a href="#/concerts" class="capitalize">concerts</a></li>
+            <li><a href="#/events" class="capitalize">events</a></li>
+            <li><a href="#/contact" class="capitalize">contact</a></li>
         </ul>
         
-        <ul>
-            <li>fb</li>
+        <ul class="no-list-style social-list">
+            <li><a href=""><span class="myspace pull-left"></span></a></li>
+            <li><a href=""><span class="instagram pull-left"></span></a></li>
+            <li><a href=""><span class="twitter pull-left"></span></a></li>
+            <li><a href=""><span class="facebook pull-left"></span></a></li>
+            <li><a href=""><span class="youtube pull-left"></span></a></li>
+            <li><a href=""><span class="tumblr pull-left"></span></a></li>
         </ul>
     </div>
     
-    <div class="grid-xs-15 grid-sm-8 prefix-sm-4 grid-md-5 prefix-md-7">
-        <h3 class="capitalize">leave a message</h3>
+    <div class="grid-xs-15 grid-sm-8 prefix-sm-4 grid-md-5 prefix-md-7 border-l contact">
+        <h3 class="capitalize tk-calluna">leave a message</h3>
         <form>
             <div class="container">
-                <input class="grid-15" type="email" name="cf_email" placeholder="email address"/>
+                <input class="grid-15 margin-b" type="email" name="cf_email" placeholder="Email address"/>
             </div>
             <div class="container">
-                <input class="grid-15" type="subject" name="cf_subject" placeholder="subject"/>
+                <input class="grid-15 margin-b" type="subject" name="cf_subject" placeholder="Subject"/>
             </div>
             <div class="container">            
-                <textarea class="grid-15" name="cf_message" placeholder="Say hi..."></textarea>
+                <textarea class="grid-15 margin-b" name="cf_message" placeholder="Say hi..."></textarea>
             </div>
+<!--
             <div class="container">
                 <p class="error">This is an error message</p>
             </div>
+-->
             <div class="container">
-                <input class="grid-15" type="submit" name="cf_submit" value="send"/>
+                <a href="" class="grid-15 uppercase border">submit</a>
             </div>
         </form>
     </div>

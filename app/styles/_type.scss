@@ -53,6 +53,28 @@ p {
     margin-bottom: 20px;
 }
 
+//INPUT
+input {
+    height: 36px;
+    padding: 12px;
+    color: lighten($text-color, 50%);
+
+    &:focus {
+        outline: none;
+        border: solid 2px $secondary-color;
+    }
+}
+
+textarea {
+    height: 120px;
+    padding: 12px;
+
+    &:focus {
+        outline: none;
+        border: solid 2px $secondary-color;
+    }
+}
+
 //LIST
 .no-list-style {
     list-style: none;
@@ -96,25 +118,6 @@ p > a {
     text-transform: uppercase
 }
 
-.primary-txt {
-    color: $primary-color;   
+.txt-center {
+    text-align: center;
 }
-
-.primary-bg {
-    background-color: $primary-color;
-}
-
-.primary-bg-hover:hover {
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    background-color: darken($primary-color, 10%)   
-}
-
-.secondary-txt {
-    color: $secondary-color;   
-}
-
-.secondary-bg {
-    background-color: $secondary-color;
-}
-

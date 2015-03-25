@@ -1,7 +1,7 @@
 .spotlight {
     height: 390px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
         
     > .spot {
         display: block;
@@ -11,7 +11,7 @@
         background: url('../images/spot_1.png');
         background-attachment: fixed;
         background-size: cover;
-        background-position: bottom center;
+        background-position: bottom;
 
         .text-box {
             background: rgba(0, 0, 0, 0.60);
@@ -28,7 +28,6 @@
                 font-weight: 100;
                 margin-top: 25px;
                 display: block;
-                padding: 12px 24px;
                 height: 87px;
                 line-height: 87px;
                 color: #fff;

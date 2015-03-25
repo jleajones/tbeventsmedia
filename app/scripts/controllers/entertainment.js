@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name tbemApp.controller:ServicesCtrl
+ * @name tbemApp.controller:EntertainmentCtrl
  * @description
- * # ServicesCtrl
+ * # EntertainmentCtrl
  * Controller of the tbemApp
  */
 angular.module('tbemApp')
-  .controller('ServicesCtrl', function ($scope) {
+  .controller('EntertainmentCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -1,0 +1,19 @@
+.ad {
+    text-align: center;
+    margin-bottom: 40px;
+    
+    img {
+        width: 300px;
+        height: 250px;
+    }
+    
+    a {
+        background: none !important;
+    }
+    
+    p {
+        font-size: 10px;
+        color: lighten($text-color, 50%);
+        margin-bottom: 5px;
+    }
+}

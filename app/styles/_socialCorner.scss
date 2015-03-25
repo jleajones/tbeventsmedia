@@ -1,0 +1,36 @@
+.social-corner {
+    h4 {
+        color: #fff;
+        padding: 0 8px;
+    }
+    > a {
+        background: none;
+        
+        > span {
+            margin-top: 10px;
+            display: block;
+            width: 47px;
+            height: 47px;
+            margin-right: 18px;
+            &.facebook {
+                background: url('../images/facebook.jpg');
+            }
+            &.myspace {
+                background: url('../images/myspace.jpg');
+            }
+            &.twitter {
+                background: url('../images/twitter.jpg');
+            }
+            &.youtube {
+                background: url('../images/youtube.jpg');
+            }
+            &.tumblr {
+                background: url('../images/tumblr.jpg');
+                margin-right: 0;
+            }
+            &.instagram {
+                background: url('../images/instagram.jpg');
+            }
+        }
+    }
+}
