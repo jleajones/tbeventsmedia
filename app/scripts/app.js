@@ -32,15 +32,15 @@ angular
         templateUrl: 'views/overview.html',
         controller: 'OverviewCtrl'
       })
-      .when('/comedy', {
+      .when('/entertainment/comedy', {
         templateUrl: 'views/comedy.html',
         controller: 'ComedyCtrl'
       })
-      .when('/sports', {
+      .when('/entertainment/sports', {
         templateUrl: 'views/sports.html',
         controller: 'SportsCtrl'
       })
-      .when('/concerts', {
+      .when('/entertainment/concerts', {
         templateUrl: 'views/concerts.html',
         controller: 'ConcertsCtrl'
       })

@@ -1,0 +1,47 @@
+.newsletter {
+  border-top: solid 2px darken($primary-color, 10%);
+  border-bottom: solid 10px darken($primary-color, 20%);
+  background: lighten($primary-color, 30%);
+  margin-bottom: 80px;
+  padding: 20px 0 60px;
+  
+  h2 {
+    font-size: 3.0em;
+    line-height: 1.0em;
+    position: relative;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  input,
+  button {
+    font-size: 2.0em;
+    line-height: 2.2em;
+    height: 2.2em;
+    border: solid 1px #ccc;
+  }
+  input {
+    width: 90%;
+    border-radius: 8px 0 0 8px;
+    
+    &:focus,
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+  button {
+    border-left: none;
+    border-color: $primary-color;
+    width: 10%;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    outline: none;
+    &:hover {
+      border-color: darken($primary-color, 20%);
+      background: darken($primary-color, 20%);
+    }
+  }
+}

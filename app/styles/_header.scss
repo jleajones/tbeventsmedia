@@ -1,66 +1,131 @@
 @import "colors";
-
-header {
-    margin-bottom: 40px;
-    
+body > {
+  header {
+    position: relative;
+    height: 215px;
+    z-index: 9999;
+    background: #fff;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #ececec;
+    //INFO BAR
+    > .info-bar {
+      margin-bottom: 65px;
+      padding: 0;
+      ul {
+        li {
+          float: left;
+          min-width: 48px;
+          text-align: center;
+          border-color:  darken($border-color, 50%);
+          font-size: 0.9em;
+        
+          > span {
+            display: block;
+            padding: 10px 10px;
+          }
+          
+          > a {
+            display: block;
+            padding: 10px 10px;
+            width: 100%;
+            height: 100%;
+            
+            &.fb {
+              &:hover {
+                background: #3B5998;  
+              }
+            }
+            
+            &.twit {
+              &:hover {
+                background: #4099FF;  
+              }
+            }
+            
+            &.yt {
+              &:hover {
+                background: #e52d27;  
+              }
+            }
+            
+            &.ig {
+              &:hover {
+                background: #517fa4;  
+              }
+            }
+            
+            &.tum {
+              &:hover {
+                background: #32506d;  
+              }
+            }
+            
+            &:hover {
+              
+              > i {
+                color: #fff !important;
+              }
+            }
+          }
+        }
+      }
+    }
     //MAIN NAVIGATION
     > nav {
-        font-weight: 100;
-        > ul {
-            margin-top: 90px;
+      font-weight: 100;
+      > ul {
+        > li {
+          position: relative;
+          a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 4px 0;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+          > ul {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            width: 200px;
+            background: #fff;
+            border: solid 1px $primary-color;
+            overflow: hidden;
             > li {
-                position: relative;
-                a {
-                    display: block;
-                    width: 100%;
-                    text-align: center;
-                    padding: 4px 0;
-                    font-size: 1.0em;
-                    font-weight: 500;
-                }
-                > ul {
-                    visibility: hidden;
-                    position: absolute;
-                    top: 100%;
-                    width: 200px;
-                    background: #fff;
-                    border: solid 1px $primary-color;
-                    overflow: hidden;
-                    
-                    > li {
-                        a {
-                            text-align: left;
-                            padding: 3px 8px;
-                            font-size: 0.8em;
-                        }
-                    }
-                }
-                
-                &:hover {
-                    > ul {
-                        visibility: visible;
-                    }
-                    > a {
-                        color: #fff;
-                        background: $primary-color;
-                        
-                        &.no-hover {
-                            color: initial;
-                            background-color: none;
-                        }
-                    }
-                }
+              a {
+                text-align: left;
+                padding: 3px 8px;
+                font-size: 0.8em;
+              }
             }
+          }
+          &:hover {
+            > ul {
+              visibility: visible;
+            }
+            > a {
+              color: #fff;
+              background: $primary-color;
+              &.no-hover {
+                color: initial;
+                background-color: transparent;
+              }
+            }
+          }
         }
+      }
     }
-    
     //MAST LOGO
     #logo {
-        text-indent: -9999px;
-        height:134px;
-        width: 126px;
-        margin: 0 auto;
-        background: url('../images/mast_logo.png') center no-repeat;
-        margin-top: -70px;
+      text-indent: -9999px;
+      height: 134px;
+      width: 126px;
+      margin: 0 auto;
+      margin-top: -50px;
+      background: url('../images/mast_logo.png') center no-repeat;
+      position: relative;
+      left: -40px;
     }
+  }
 }

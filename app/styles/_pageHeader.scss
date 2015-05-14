@@ -1,7 +1,7 @@
 @import "colors";
 .page-header {
     margin-bottom: 40px;
-    padding: 40px 0;
+    padding: 40px 0 120px;
     background-image: linear-gradient(to bottom, darken($primary-color, 20%) 0,lighten($primary-color, 10%) 100%);
     text-shadow: 0 1px 0 rgba(0,0,0,0.75);
     

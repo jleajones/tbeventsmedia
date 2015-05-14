@@ -1,72 +1,89 @@
 .top-artist {
-    margin-bottom: 20px;
-    padding: 25px 0;
+  margin-bottom: 80px;
+  padding: 25px 0;
+  h2 {
+    font-size: 3.0em;
+    line-height: 1.0em;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .control {
+    button {
+      position: relative;
+      top: 40px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+      i {
+        color: $inactive-color;
         
-    .control {
-
+        &:hover {
+          color: $primary-color;
+        }
+      }
     }
-
-    .prev {
-        text-align: right;
-    }
-
-    .next {
-
-    }
-    
-    .stage {
-        overflow: hidden;
+  }
+  .prev {
+    text-align: right;
+  }
+  .next {}
+  .stage {
+    overflow: hidden;
+    height: 191px;
+    > ul {
+      width: 99999px;
+      height: 191px;
+      list-style: none;
+      > li {
+        cursor: pointer;
+        display: block;
+        width: 220px;
         height: 191px;
-            
-        > ul {
-            width: 99999px;
-            height: 191px;
-            
-            list-style: none;
-            > li {
-                display: block;
-                width: 220px;
-                height: 191px;
-                margin-right: 20px;
-                border: solid 1px $secondary-color;
-                position: relative;
-                
-                > .text-box {
-                    width: 100%;
-                    position: absolute;
-                    bottom: 0;
-                    height: 45px;
-                    padding: 0 8px;
-                    
-                    p {
-                        line-height: 45px;
-                        font-weight: bold;
-                        color: #fff;
-                        text-transform: capitalize;
-                        
-                        > a {
-                            color: #fff;
-                            margin-top: 7px;
-                            line-height: 31px;
-                            font-size: 0.8em;
-                            border-radius: 5px;
-                            padding: 0 8px;
-                            
-                            &:hover {
-                                background-color: darken($primary-color, 10%);
-                            }
-                        }
-                    }
-                }
+        margin-right: 20px;
+        border: solid 1px $secondary-color;
+        position: relative;
+        &:hover {
+          > .text-box {
+            top: 0;
+          }
+        }
+        > .text-box {
+          width: 100%;
+          position: absolute;
+          top: 191px;
+          height: 192px;
+          padding: 0 8px;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          p {
+            line-height: 1.2em;
+            &:first-child {
+              text-transform: capitalize;
+              line-height: 45px;
+              margin-bottom: 10px;
             }
+            > a {
+              color: #fff;
+              margin-top: 7px;
+              line-height: 31px;
+              font-size: 0.8em;
+              border-radius: 5px;
+              padding: 0 8px;
+              font-weight: bold;
+              &:hover {
+                background-color: darken($primary-color, 20%);
+              }
+            }
+          }
         }
+      }
     }
-    
-    p {
-        margin: 0;
-        
-        > a {
-            padding: 0 4px;
-        }
+  }
+  p {
+    margin: 0;
+    > a {
+      padding: 0 4px;
     }
+  }
 }

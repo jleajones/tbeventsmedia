@@ -1,15 +1,35 @@
 .welcome {
-    text-align: center;
-    border-bottom: solid 1px $border-color;
-    margin-bottom: 20px;
-    
-    p {
-        padding: 0 40px;
-        font-size: 1.15em;
-        line-height: 1.6em;
-        
-        a {
-            padding: 0 4px;
-        }
-    }
+  overflow: hidden;
+	margin-bottom: 80px;
+  > div:first-child {
+    height: 383px;
+    background: url('../images/section_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  > div:last-child {
+    background: $primary-color-dark;
+  }
+  hr {
+    border: solid 1px $secondary-color;
+    position: relative;
+    top: -5px;
+  }
+	h3 {
+		font-variant: small-caps;
+    text-transform: capitalize;
+	}
+	p {
+		font-size: 1.15em;
+		line-height: 1.6em;
+		a {
+			padding: 0 4px;
+      color: $secondary-color;
+      
+      &:hover {
+        color: #fff;
+        background: $secondary-color;
+      }
+		}
+	}
 }

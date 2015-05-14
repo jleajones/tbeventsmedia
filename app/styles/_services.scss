@@ -1,39 +1,30 @@
 .services {
-    padding: 40px 0 80px;
-    .img-holder {
-        border:solid 1px $border-color;    
-        height:289px;
-        margin-bottom: 20px;
-        background-size: cover;
-        background-position: center;
-        
-        &.marketing-promo {
-            background-image: url('../images/marketin-promo.jpg');
-        }
-        
-        &.event-planning {
-            background-image: url('../images/event-planning.jpg');
-        }
-        
-        &.celebrity-booking {
-            background-image: url('../images/celebrity-booking.jpg');
-        }
+  margin-bottom: 80px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  .img-holder {
+    border: solid 1px $border-color;
+    height: 289px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    &.marketing-promo {
+      background-image: url('../images/marketin-promo.jpg');
     }
-    
-    
-    p {
-        line-height: 1.5em;
-        
-        > a {
-            padding: 0 4px;
-        }
+    &.event-planning {
+      background-image: url('../images/event-planning.jpg');
     }
-}
-
-.well {
-    .services {
-        h2 {
-            font-size: 1.5em;
-        }
+    &.celebrity-booking {
+      background-image: url('../images/celebrity-booking.jpg');
     }
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 0;
+    > a {
+      padding: 0 4px;
+    }
+  }
 }

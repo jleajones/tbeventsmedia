@@ -1,0 +1,31 @@
+<div class="container tb-carousel">
+  <div class="grid-15">
+    <div class="container margin-b">
+      <div class="grid-1 control">
+        <button class="prev"><i class="fa fa-angle-left fa-5x"></i>
+        </button>
+      </div>
+      <div class="stage grid-13">
+        <ul>
+          <li class="pull-left" ng-repeat="item in items">
+            <div class="text-box secondary-bg-2">
+              <p><b class="white-txt">{{item.name}}</b> <a href="" class="pull-right uppercase primary-bg">book now</a>
+              </p>
+              <p class="white-txt">{{item.bio}}</p>
+            </div>
+            <img src="{{item.imageUrl}}" />
+          </li>
+
+        </ul>
+      </div>
+      <div class="grid-1 control">
+        <button class="next"><i class="fa fa-angle-right fa-5x"></i>
+        </button>
+      </div>
+    </div>
+    
+    <p class="pull-right"><a href="#/" class="capitalize">see all <i class="fa fa-angle-double-right primary-txt"></i></a>
+    </p>
+
+  </div>
+</div>

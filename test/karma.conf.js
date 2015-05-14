@@ -7,6 +7,12 @@ module.exports = function(config) {
   'use strict';
 
   config.set({
+    preprocessors: {
+      '**/*.html': ['ng-html2js']
+    },
+		ngHtml2JsPreprocessor: {
+			stripPrefix: 'app/',
+		},
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
@@ -29,7 +35,9 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      'test/spec/**/*.js',
+			//directive templates
+			'app/views/**/*.html'
     ],
 
     // list of files / patterns to exclude
@@ -53,7 +61,8 @@ module.exports = function(config) {
     // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+			'karma-ng-html2js-preprocessor'
     ],
 
     // Continuous Integration mode

@@ -1,11 +1,12 @@
 // bower:scss
 @import "gridle/sass/gridle/_gridle.scss";
 // endbower
+@import "font-awesome-sass/assets/stylesheets/font-awesome.scss";
 
 // setting up the grid
 @include gridle_setup( (
 	context : 15,
-	gutter-width : 20px,
+	gutter-width : 40px,
 	direction : ltr,
 ) );
 
@@ -70,6 +71,8 @@
 
 @import "type";
 @import "header";
+@import "rail";
+@import "stalkerNav";
 @import "spotlight";
 @import "welcome";
 @import "topArtist";
@@ -78,14 +81,12 @@
 @import "emailSignUp";
 @import "ad";
 @import "socialCorner";
+@import "contact";
+@import "upcomingEvents";
+@import "newsletter";
 @import "footer";
-
-
 @import "articleSummary";
-
-
 @import "pageHeader";
-
 
 body {
     margin: 0;
@@ -93,14 +94,62 @@ body {
 }
 
 //HELPER CLASSES
-.pull-right {
-  float: right;   
-}
-
-.pull-left {
-    float: left;
-}
-
 .margin-b {
     margin-bottom: 20px;
+}
+
+.margin-b-xl {
+    margin-bottom: 40px;
+}
+
+.margin-t {
+    margin-top: 20px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-l {
+  margin-left: 0;
+}
+
+.no-margin-r {
+  margin-right: 0;
+}
+
+.no-margin-t {
+  margin-top: 0;
+}
+
+.no-margin-b {
+  margin-bottom: 0;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.padding-xl {
+  padding: 40px;
+}
+
+.padding-t {
+    padding-top: 20px;
+}
+
+.padding-t-xl {
+    padding-top: 40px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-l {
+	padding-left: 0;
+}
+
+.no-padding-r {
+	padding-right: 0;
 }

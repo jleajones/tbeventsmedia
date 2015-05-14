@@ -28,13 +28,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+  
     <header ng-include="'views/header.html'">
     </header>
-
-    <main ng-view="">
+    
+    <tb-stalker></tb-stalker>
+  
+    <main ng-view="" autoscroll="true">
     </main>
 
-    <footer ng-include="'views/footer.html'" class="primary-bg">
+    <footer ng-include="'views/footer.html'">
     </footer>
 
 
@@ -52,7 +55,7 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-XXXXX-X');
+        ga('create', 'UA-61177099-1');
         ga('send', 'pageview');
     </script>
 
@@ -91,6 +94,9 @@
     <script src="scripts/controllers/booking.js"></script>
     <script src="scripts/controllers/entertainment.js"></script>
     <script src="scripts/controllers/gallery.js"></script>
+    <script src="scripts/directives/tbcarousel.js"></script>
+    <script src="scripts/directives/tbstalker.js"></script>
+    <script src="scripts/directives/tbequalheight.js"></script>
     <!-- endbuild -->
 </body>
 

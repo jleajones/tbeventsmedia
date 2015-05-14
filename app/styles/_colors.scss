@@ -1,75 +1,101 @@
 $text-color: #252525;
+$text-color-light: #d7d7d7;
+$inactive-color:#d7d7d7;
+
 $border-color: #b7b7b7;
 
 $med-bg: #d7d7d7;
 
 $primary-color: #0068ff;
+$primary-color-dark: #252525;
 $secondary-color: #d6a918;
+
 
 //HELPER CLASSES
 .primary-txt {
-    color: $primary-color;   
+  color: $primary-color;
+}
+
+.primary-txt-dark {
+  color: $primary-color-dark;
 }
 
 .dark-bg {
-    background-color: #000;
+  background-color: $primary-color-dark;
+  color: #fff;
+  padding: 8px;
+  font-weight: normal;
 }
 
 .primary-bg {
-    background-color: $primary-color;
+  background-color: $primary-color;
+}
+
+.primary-bg-dark {
+  background-color: $primary-color-dark;
 }
 
 .primary-bg-hover:hover {
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    background-color: darken($primary-color, 10%)   
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  background-color: darken($primary-color, 10%)
 }
 
 .secondary-txt {
-    color: $secondary-color;   
+  color: $secondary-color;
 }
 
 .secondary-bg {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 .secondary-bg-2 {
-    background-color: transparentize($secondary-color, 0.2);
+  background-color: transparentize($secondary-color, 0.2);
 }
 
 .secondary-bg-hover:hover {
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    background-color: darken($secondary-color, 10%)   
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  background-color: darken($secondary-color, 10%)
 }
 
 .med-bg {
-    background-color: $med-bg;
+  background-color: $med-bg;
+}
+
+.light-txt {
+  color: $text-color-light;
+}
+
+.white-txt {
+  color: #fff;
 }
 
 .border {
-    border: solid 1px $border-color;
+  border: solid 1px $border-color;
 }
 
 .border-secondary {
-    border: solid 1px $secondary-color;
+  border: solid 1px $secondary-color;
 }
 
 .border-l {
-    border-left: solid 1px $border-color;
+  border-left: solid 1px $border-color;
 }
+
 .border-r {
-    border-right: solid 1px $border-color;
+  border-right: solid 1px $border-color;
 }
+
 .border-t {
-    border-top: solid 1px $border-color;
+  border-top: solid 1px $border-color;
 }
 
 .border-b {
-    border-bottom: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
 }
 
 .border-tb {
-    border-bottom: solid 1px $border-color;
-    border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
+  border-top: solid 1px $border-color;
 }

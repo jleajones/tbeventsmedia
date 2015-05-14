@@ -1,105 +1,26 @@
 <div class="spotlight">
-    <div class="spot">
-        <div class="container">
-            <div class="text-box grid-sm-8 grid-xs-15">
-                <h1 class="uppercase">let <span class="secondary-txt">tb events &amp; media</span><br/>plan your next event</h1>
-                <a href="" class="btn primary-bg primary-bg-hover uppercase">book now</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="grid-xs-15 grid-sm-9 grid-md-10">
-        <div class="welcome">
-            <h2 class="tk-calluna primary-txt">Welcome to TB Events &amp; Media</h2>
-            <p>We are committed to the success of our clients. Our established relationships within the music and entertainment industry give us an increased advantage over competitors to help provide you with optimal service in Celebrity Bookings as well as Marketing &amp; Promotions. It is our goal to put on events that promote your respective colleges or universities in addition to building a strong relationship that carries on into the distant future. We are excited at the opportunity to present our company to you, in hopes that you will consider us as a viable partner and resource for your future endeavors. <a href="#/about">Read more</a>
-            </p>
-        </div>
-
-        <div class="container">
-            <h3 class="tk-calluna primary-txt margin-b">2015 Event Lineup</h3>
-            <div class="grid-xs-15 grid-sm-5 card margin-b">
-                <div class="border blaze-the-stage">
-                </div>
-                <header>
-                    blaze the stage night
-                </header>
-            </div>
-            <div class="grid-xs-15 grid-sm-5 card margin-b">
-                <div class="border brilliant-idiots">
-                </div>
-                <header>
-                    the brilliant idiots
-                </header>
-            </div>
-            <div class="grid-xs-15 grid-sm-5 card margin-b">
-                <div class="border futoboleros">
-                </div>
-                <header>
-                    futboleros
-                </header>
-            </div>
-        </div>
-
-    </div>
-    
-    <div class="grid-xs-15 grid-sm-6 grid-md-5 rail margin-b" ng-include="'views/rail.html'">
-    </div>
-</div>
-
-<div class="top-artist border-tb med-bg">
+  <div class="spot">
     <div class="container">
-        <div class="grid-15">
-            <div class="container margin-b">
-                <div class="grid-1 control prev">
-                    prev
-                </div>
-                <div class="stage grid-13">
-                    <ul>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                        <li class="pull-left">
-                            <div class="text-box secondary-bg-2">
-                                <p>Artist Name<a href="" class="pull-right uppercase primary-bg">book now</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-1 control next">
-                    next
-                </div>
-            </div>
-            
-            <p class="pull-right"><a href="#/" class="capitalize">see all&raquo;</a></p>
-            
-        </div>
+      <div class="text-box grid grid-sm-10 grid-xs-15">
+        <h1 class="uppercase">let <span class="secondary-txt">tb events &amp; media</span><br/>plan your next event</h1>
+        <a href="" class="btn primary-bg primary-bg-hover uppercase">book now</a>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="container services" ng-include="'views/services.html'">
+<div class="services" ng-include="'views/services.html'"></div>
+
+<div class="welcome" ng-include="'views/welcome.html'"></div>
+
+<div class="upcoming-events" ng-include="'views/upcomingevents.html'"></div>
+
+<div class="newsletter" ng-include="'views/newsletter.html'"></div>
+
+<div class="top-artist">
+  <div class="container">
+    <h2 class="txt-center secondary-txt"><span class="txt-light secondary-txt">Top</span> Celebrities</h2>
+  </div>
+  <div tb-carousel="" tb-carousel-items="topArtists">
+  </div>
 </div>

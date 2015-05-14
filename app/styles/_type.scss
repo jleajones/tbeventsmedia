@@ -1,123 +1,148 @@
 @import "colors";
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, form, input, textarea {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
 }
 
 //BASELINE 
-*{
-    font-size: 1em;
-    line-height: 1.2em;
-    color: $text-color;
-    font-family: "proxima-nova",sans-serif;
+* {
+  font-size: 1em;
+  line-height: 1.8em;
+  color: $text-color;
+  font-family: "futura-pt", sans-serif;
 }
 
 //HEADINGS
-h1, h2, h3, h4, h5, h6 {
-    
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
 
 h1 {
-    font-size:2.2em;
-    line-height: 2.4em;
+  font-size: 2.2em;
+  line-height: 2.4em;
 }
 
 h2 {
-    font-size: 2.0em;
-    line-height: 2.2em;
+  font-size: 2.0em;
+  line-height: 2.2em;
 }
 
 h3 {
-    font-size: 1.8em;
-    line-height: 2.0;
+  font-size: 1.8em;
+  line-height: 2.0;
 }
 
 h4 {
-    font-size: 1.6em;
-    line-height: 1.8em;
+  font-size: 1.6em;
+  line-height: 1.8em;
 }
 
 h5 {
-    font-size: 1.4em;
-    line-height: 1.6em;
+  font-size: 1.4em;
+  line-height: 1.6em;
 }
 
 h6 {
-    font-size: 1.2em;
-    line-height: 1.4em;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 //PARAGRAPHS
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 //INPUT
 input {
-    height: 36px;
-    padding: 12px;
-    color: lighten($text-color, 50%);
-
-    &:focus {
-        outline: none;
-        border: solid 2px $secondary-color;
-    }
+  height: 36px;
+  padding: 12px;
+  color: lighten($text-color, 50%);
+  &:focus {
+    outline: none;
+    border: solid 1px $secondary-color;
+  }
 }
 
 textarea {
-    height: 120px;
-    padding: 12px;
-
-    &:focus {
-        outline: none;
-        border: solid 2px $secondary-color;
-    }
+  height: 120px;
+  padding: 12px;
+  color: lighten($text-color, 50%);
+  &:focus {
+    outline: none;
+    border: solid 1px $secondary-color;
+  }
 }
 
 //LIST
 .no-list-style {
-    list-style: none;
+  list-style: none;
 }
-    
 
 //LINKS
 a {
-    color: $primary-color;
-    text-decoration: none;
-    
-    &.no-color {
+  color: $primary-color;
+  text-decoration: none;
+  &.no-color {
+    color: $text-color;
+    background-color: none;
+  }
+  &:hover {
+    color: #fff;
+    background: $primary-color;
+    &.no-hover {
+      color: $primary-color;
+      background-color: none !important;
+      &.no-color {
         color: $text-color;
-        background-color: none;
+      }
     }
-    
-    &:hover {
-        color: #fff;
-        background: $primary-color;
-        &.no-hover {
-            color: $primary-color;
-            background-color: none !important;
-            &.no-color {
-                color: $text-color;
-            }
-        }
-    }
+  }
 }
 
-p > a {    
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+p > a,
+button {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 //HELPER CLASSES
 .capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .uppercase {
-    text-transform: uppercase
+  text-transform: uppercase
 }
 
 .txt-center {
-    text-align: center;
+  text-align: center;
+}
+
+.txt-light {
+  font-weight: 100;
+}
+
+.txt-med {
+  font-weight: 500;
+}
+
+.no-hover {
+  &:hover {
+    color: initial;
+    background-color: transparent  !important;
+  }
 }
