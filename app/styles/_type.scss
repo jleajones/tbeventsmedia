@@ -1,4 +1,7 @@
 @import "colors";
+
+$button-height: 60px;
+
 h1,
 h2,
 h3,
@@ -71,6 +74,7 @@ input {
   height: 36px;
   padding: 12px;
   color: lighten($text-color, 50%);
+  border: solid 1px $border-color;
   &:focus {
     outline: none;
     border: solid 1px $secondary-color;

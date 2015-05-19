@@ -5,7 +5,7 @@
         <button class="prev"><i class="fa fa-angle-left fa-5x"></i>
         </button>
       </div>
-      <div class="stage grid-13">
+      <div class="stage grid-13 no-gutter">
         <ul>
           <li class="pull-left" ng-repeat="item in items">
             <div class="text-box secondary-bg-2">
@@ -13,7 +13,7 @@
               </p>
               <p class="white-txt">{{item.bio}}</p>
             </div>
-            <img src="{{item.imageUrl}}" />
+            <img ng-src="{{item.imageUrl}}" />
           </li>
 
         </ul>

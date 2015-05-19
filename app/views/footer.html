@@ -3,13 +3,13 @@
     <div class="grid-xs-15 grid-sm-4">
       <h6 class="uppercase"><i class="fa fa-info-circle fa-inverse"></i>&nbsp;&nbsp;about tb events &amp; media</h6>
       <hr width="10%">
-      
+
       <p class="light-txt">TB Events &amp; Media is your one stop source for booking the biggest names in music, comedy, and entertainment.</p>
-      
+
       <p class="white-txt no-margin"><i class="fa fa-map-marker secondary-txt"></i>&nbsp;&nbsp;Brooklyn, New York USA</p>
-      <p class="white-txt no-margin"><i class="fa fa-envelope secondary-txt"></i>&nbsp;&nbsp;<a href="" class="white-txt">hello@tbeventsandmedia.com</a></p>
-      <p class="white-txt"><i class="fa fa-phone secondary-txt"></i>&nbsp;&nbsp;800-555-5555</p>
-<!--
+      <p class="white-txt no-margin"><i class="fa fa-envelope secondary-txt"></i>&nbsp;&nbsp;<a href="" class="white-txt">info@tbeventsandmedia.com</a>
+      </p>
+      <!--
       <ul class="no-list-style services-list">
         <li><a href="#/services" class="capitalize">services</a>
         </li>
@@ -26,82 +26,39 @@
       </ul>
 -->
     </div>
-    
+
     <div class="grid-xs-15 grid-sm-3 no-gutter">
       <h6 class="uppercase"><i class="fa fa-twitter fa-inverse"></i>&nbsp;&nbsp;latest news</h6>
       <hr width="10%">
       <div class="container post-container">
         <div class="post">
-          <p class="white-txt"><i class="fa fa-quote-left light-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right light-txt"></i></p>
+          <p class="white-txt"><i class="fa fa-quote-left secondary-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right secondary-txt"></i>
+          </p>
           <p class="light-txt uppercase">april 20, 2015</p>
         </div>
         <div class="post">
-          <p class="white-txt"><i class="fa fa-quote-left light-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right light-txt"></i></p>
+          <p class="white-txt"><i class="fa fa-quote-left secondary-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right secondary-txt"></i>
+          </p>
           <p class="light-txt uppercase">april 20, 2015</p>
         </div>
         <div class="post">
-          <p class="white-txt"><i class="fa fa-quote-left light-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right light-txt"></i></p>
+          <p class="white-txt"><i class="fa fa-quote-left secondary-txt"></i>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;&nbsp;<i class="fa fa-quote-right secondary-txt"></i>
+          </p>
           <p class="light-txt uppercase">april 20, 2015</p>
         </div>
       </div>
     </div>
-    
-    <div class="grid-xs-15 grid-sm-4">
+
+    <div class="grid-xs-15 grid-sm-4" ng-controller="InstagramCtrl">
       <h6 class="uppercase"><i class="fa fa-camera fa-inverse"></i>&nbsp;&nbsp;recent photos</h6>
       <hr width="10%">
       <div class="container image-container">
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
+        <div class="grid-xs-5 grid-sm-5 no-gutter" ng-repeat="image in photos | limitTo: 9">
           <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href="http://www.google.com"><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
-          </div>
-        </div>
-        <div class="grid-xs-5 grid-sm-5 no-gutter">
-          <div>
-            <div class="overlay"><i class="fa fa-search fa-inverse"></i></div>
-            <a href=""><img src="../images/blaze-the-stage.png" width="100%"/></a>
+            <div class="overlay"><i class="fa fa-search fa-inverse"></i>
+            </div>
+            <a ng-href="{{image.link}}" target="_blank"><img ng-src="{{image.images.thumbnail.url}}" width="100%" />
+            </a>
           </div>
         </div>
       </div>
@@ -146,7 +103,7 @@
         <a href="" class="no-hover">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x light-txt"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
           </span>
         </a>
       </li>
@@ -159,7 +116,7 @@
         </a>
       </li>
       <li class="pull-left">
-        <a href="" class="no-hover">
+        <a href="https://instagram.com/TBEventsMedia" target="_blank" class="no-hover">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x light-txt"></i>
             <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -175,8 +132,8 @@
         </a>
       </li>
     </ul>
-    
-    
+
+
     <p class="float-sm-left light-txt no-margin">
       &copy; 2015 TB Events &amp; Media. All Rights Reserved.
     </p>

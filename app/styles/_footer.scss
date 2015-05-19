@@ -161,6 +161,7 @@ footer {
           .overlay {
             width: 80%;
             height: 80%;
+            border: solid 7px  rgba(darken($secondary-color, 20%), 0.35);
             > i {
               display: block;
             }

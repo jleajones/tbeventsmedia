@@ -1,6 +1,5 @@
 .top-artist {
   margin-bottom: 80px;
-  padding: 25px 0;
   h2 {
     font-size: 3.0em;
     line-height: 1.0em;
@@ -30,19 +29,23 @@
   .next {}
   .stage {
     overflow: hidden;
-    height: 191px;
+    height: 201px;
     > ul {
       width: 99999px;
-      height: 191px;
+      height: 201px;
       list-style: none;
       > li {
         cursor: pointer;
         display: block;
-        width: 220px;
-        height: 191px;
+        width: 232px;
+        height: 201px;
         margin-right: 20px;
         border: solid 1px $secondary-color;
         position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
         &:hover {
           > .text-box {
             top: 0;
@@ -51,8 +54,8 @@
         > .text-box {
           width: 100%;
           position: absolute;
-          top: 191px;
-          height: 192px;
+          top: 201px;
+          height: 232px;
           padding: 0 8px;
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
@@ -62,6 +65,7 @@
               text-transform: capitalize;
               line-height: 45px;
               margin-bottom: 10px;
+              border-bottom: solid 1px #fff;
             }
             > a {
               color: #fff;
