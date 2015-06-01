@@ -1,7 +1,11 @@
 // bower:scss
-@import "gridle/sass/gridle/_gridle.scss";
 // endbower
+
+
+$fa-font-path: "/bower_components/font-awesome-sass/assets/fonts/font-awesome/";
 @import "font-awesome-sass/assets/stylesheets/font-awesome.scss";
+
+@import "gridle/sass/gridle/gridle";
 
 // setting up the grid
 @include gridle_setup( (

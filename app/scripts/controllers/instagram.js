@@ -18,7 +18,6 @@ angular.module('tbemApp')
     $scope.photos = [];
     instagram.fetchPhotos(function(data){
       $scope.photos = data;
-      console.log(data);
     });
 
   });
