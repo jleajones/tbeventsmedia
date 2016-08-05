@@ -36,8 +36,8 @@ $secondary-color: #d6a918;
 }
 
 .primary-bg-hover:hover {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
   background-color: darken($primary-color, 10%)
 }
 
@@ -54,8 +54,8 @@ $secondary-color: #d6a918;
 }
 
 .secondary-bg-hover:hover {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
   background-color: darken($secondary-color, 10%)
 }
 

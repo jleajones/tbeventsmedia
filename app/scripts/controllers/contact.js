@@ -14,4 +14,22 @@ angular.module('tbemApp')
       'AngularJS',
       'Karma'
     ];
+    
+    $scope.master = {};
+    
+    $scope.submit = function(form) {
+        console.log(form);
+    };
+    
+    $scope.reset = function(form) {
+        if(form) {
+            form.$setPristine();
+            form.$setUntouched();
+            console.log(form);
+        }
+        
+        $scope.user = angular.copy($scope.master);
+    };
+    
+    $scope.reset();
   });

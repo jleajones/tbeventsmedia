@@ -70,7 +70,8 @@ p {
 }
 
 //INPUT
-input {
+input,
+select {
   height: 36px;
   padding: 12px;
   color: lighten($text-color, 50%);
@@ -79,6 +80,10 @@ input {
     outline: none;
     border: solid 1px $secondary-color;
   }
+}
+
+select {
+    text-transform: capitalize;
 }
 
 textarea {
@@ -119,8 +124,8 @@ a {
 
 p > a,
 button {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
 }
 
 //HELPER CLASSES

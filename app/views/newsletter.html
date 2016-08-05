@@ -1,10 +1,20 @@
 <div class="container">
-  <div class="grid-sm-12 centered">
-    <h2 class="white-txt"><span class="txt-light white-txt">Newsletter</span> Signup</h2>
-    <p class="white-txt">Enter your email to recieve important updates to your inbox, for free. Stay up to date with our Top Celebrities and all Upcoming Events.</p>
-    <form name="newsletter-form">
-      <input type="email" name="email" class="float-left" placeholder="your email address" />
-      <button type="submit" class="float-left primary-bg"><i class="fa fa-envelope fa-inverse"></i></button>
-    </form>
-  </div>
+    <div class="grid-sm-12 centered">
+        <h2 class="white-txt"><span class="txt-light white-txt">Newsletter</span> Signup</h2>
+        <p class="white-txt">Enter your email to recieve important updates to your inbox, for free. Stay up to date with our Top Celebrities and all Upcoming Events.</p>
+        <form name="newsletter" novalidate>
+            <div ng-show="(newsletter.$submitted || newsletter.email.$touched) && (newsletter.email.$error.required || newsletter.email.$invalid)" class="error">
+                <p class="txt-center"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Enter a valid email.</p>
+                <i class="fa fa-close" ng-click="reset(newsletter)"></i>
+            </div>
+            <div ng-hide="submitted" class="container">
+                <input type="email" name="email" class="float-left" placeholder="your email address" ng-model="user.email" required="" />
+                <button type="submit" class="float-left primary-bg" ng-click="submit(newsletter)"><i class="fa fa-envelope fa-inverse"></i>
+                </button>
+            </div>
+            <div ng-show="submitted" class="success">
+                <p class="txt-center"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;You should receive your first newsletter shortly.  Thanks for signing up!</p>
+            </div>
+        </form>
+    </div>
 </div>
